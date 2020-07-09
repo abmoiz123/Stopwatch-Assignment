@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <h1 class="heading">STOP WATCH</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h3>MINUTES</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h3>SECOND</h3>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h3>MILI-SECOND</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h1 id="min">0</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h1 id="sec">0</h1>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <h1 id="msec">0</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <button class="srt" onclick="start()" id="str">START</button>
+                        <button class="pause" onclick="pause()" id="pause">PAUSE</button>
+                        <button class="resume" onclick="resume()" id="resume">RESUME</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                        <button class="stp" onclick="lap()" id="lap" disabled>LAP</button>
+                        <button class="clr" onclick="clr()" id="clr">ClEAR-LAP</button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4"><button class="rst" onclick="reset()">RESET</button>
+                    </div>
+                </div>
+                <ol id="li1"></ol>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
